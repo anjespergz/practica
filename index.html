@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="possible.png">
+  <title>textos y poesía</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      color: #333333;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      transition: background-color 0.5s ease, color 0.5s ease; /* Animación suave */
+    }
+    a {
+      color: #ff6f61; /* Cambio a coral como color principal */
+      text-decoration: none;
+      transition: color 0.3s ease; /* Animación suave */
+    }
+    a:hover {
+      color: #ff3b2f; /* Color más intenso al pasar el cursor */
+    }
+    h1, h2, h3 {
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+    marquee {
+      padding: 15px;
+      background-color: #333333;
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      transition: background-color 0.5s ease, color 0.5s ease; /* Animación suave */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      cursor: pointer; /* Cambia el cursor al pasar sobre el GIF */
+    }
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      transition: background-color 0.5s ease, border-color 0.5s ease; /* Animación suave */
+    }
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+      transition: background-color 0.5s ease, color 0.5s ease; /* Animación suave */
+    }
+    th {
+      background-color: #f8f8f8;
+      color: #1a1a1a;
+      font-size: 1.2rem;
+    }
+    td {
+      font-size: 1.1rem;
+    }
+    td img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+      transition: color 0.5s ease; /* Animación suave */
+    }
+
+    /* Modo oscuro */
+    body.dark-mode {
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+    }
+    .dark-mode h1,
+    .dark-mode h2,
+    .dark-mode h3 {
+      color: #f0f0f0; /* Asegurar que los títulos cambien de color */
+    }
+    marquee.dark-mode {
+      background-color: #444;
+      color: #f0f0f0;
+    }
+    table.dark-mode {
+      background-color: #2a2a2a;
+      border-color: #444;
+    }
+    th.dark-mode {
+      background-color: #333;
+      color: #ffffff; /* Cambio a un tono de azul morado */
+    }
+    td.dark-mode {
+      background-color: #2a2a2a;
+      color: #f0f0f0;
+    }
+    .footer.dark-mode {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Marquesina -->
+    <marquee behavior="alternate" direction="right">
+      <img src="wasp.gif" alt="Libro" width="60" height="60" style="vertical-align: middle;">
+      <b><font size="5" color="#f0f0f0">Bienaventurado el que no cambia el sueño de su vida por el pan de cada día</font></b>
+      <img src="wasp.gif" alt="Libro" width="60" height="60" style="vertical-align: middle;">
+    </marquee>
+
+    <!-- Encabezado -->
+    <div class="header">
+      <h1>Textos y Poesía</h1>
+      <img id="mode-toggle" src="writer.gif" alt="Poeta">
+      <h2>Explora el mundo de las palabras</h2>
+      <p>Descubre la belleza de la poesía clásica y contemporánea.</p>
+      <a href="https://anjespergz.github.io/anjes/index.html">Visita mi blog personal</a>
+    </div>
+
+    <!-- Tabla -->
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Imagen</th>
+          <th>Autor</th>
+          <th>Obra Destacada</th>
+          <th>Enlace</th>
+        </tr>
+        <tr>
+          <td><img src="book.gif" alt="Pablo Neruda"></td>
+          <td>Pablo Neruda</td>
+          <td>20 Poemas de Amor y una Canción Desesperada</td>
+          <td><a href="https://www.ingenieria.unam.mx/dcsyhfi/material_didactico/Literatura_Hispanoamericana_Contemporanea/Autores_N/NERUDA/Veinte.pdf">Leer más</a></td>
+        </tr>
+        <tr>
+          <td><img src="book.gif" alt="Gabriela Mistral"></td>
+          <td>Gabriela Mistral</td>
+          <td>Sonetos de la Muerte</td>
+          <td><a href="https://poemario.com/pdf/los-sonetos-de-la-muerte.pdf">Leer más</a></td>
+        </tr>
+        <tr>
+          <td><img src="book.gif" alt="Octavio Paz"></td>
+          <td>Octavio Paz</td>
+          <td>El Laberinto de la Soledad</td>
+          <td><a href="https://www.suneo.mx/literatura/subidas/Octavio%20Paz%20El%20Laberinto%20de%20la%20Soledad.pdf">Leer más</a></td>
+        </tr>
+        <tr>
+          <td><img src="book.gif" alt="Sor Juana Inés de la Cruz"></td>
+          <td>Sor Juana Inés de la Cruz</td>
+          <td>Redondillas</td>
+          <td><a href="https://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Redondillas.pdf">Leer más</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+      <p>&copy; 2025 Textos y Poesía. Todos los derechos reservados.</p>
+    </div>
+  </div>
+
+  <script>
+    // Función para alternar entre modo oscuro y modo claro
+    function toggleDarkMode() {
+      const body = document.body;
+      const marquee = document.querySelector('marquee');
+      const table = document.querySelector('table');
+      const th = document.querySelectorAll('th');
+      const td = document.querySelectorAll('td');
+      const footer = document.querySelector('.footer');
+      const h1 = document.querySelector('h1');
+      const h2 = document.querySelector('h2');
+      const p = document.querySelector('.header p');
+
+      // Alternar clases para el modo oscuro
+      body.classList.toggle('dark-mode');
+      marquee.classList.toggle('dark-mode');
+      table.classList.toggle('dark-mode');
+      th.forEach(element => element.classList.toggle('dark-mode'));
+      td.forEach(element => element.classList.toggle('dark-mode'));
+      footer.classList.toggle('dark-mode');
+      h1.classList.toggle('dark-mode');
+      h2.classList.toggle('dark-mode');
+      p.classList.toggle('dark-mode');
+    }
+
+    // Asignar el evento de clic al GIF
+    document.getElementById('mode-toggle').addEventListener('click', toggleDarkMode);
+  </script>
+</body>
+</html>
